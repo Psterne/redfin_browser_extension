@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Redfin Pending Filter",
+  "description": "Hides pending homes in Redfin favorites list",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.redfin.com/*"],
+      "js": ["pending_fin.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
